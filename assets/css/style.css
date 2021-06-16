@@ -1,0 +1,141 @@
+/* universal selector */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color:white;
+}
+
+header {
+    padding: 20px;
+    background-color: rgb(49, 52, 61);
+    color: #ffffff;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#underheader {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/underheader.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.major-section {
+    display: inline-block;
+    margin-right: 5%;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    min-height: 100%;
+    width: 15%;
+    border-right: solid 5px;
+    float: left;
+}
+
+.section-title h2 {
+    font-size: 80px;
+}
+
+#about-me #about-text {
+    width: 70%;
+    display: inline-block;
+    font-size: 26px;
+    margin: 20px;
+}
+
+/* Work Examples */
+
+main #cards {
+    width: 70%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#surf-card {
+    border: 5px solid cyan;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+#surf-card:hover {
+    filter: brightness(80%) saturate(150%);
+}
+
+.project-images{
+    width: 100%;
+    height: 100%;
+}
+
+.work-card {
+    border: solid 5px cyan;
+    /* display: flex; */
+    width: 45%;
+    position: relative;
+    margin: 10px;
+    display: inline-block;
+}
+
+.work-card:hover {
+    filter: brightness(80%) saturate(150%);
+}
+
+.card-title {
+    position: absolute;
+    bottom: 30px;
+    height: 70px;
+    width: 150px;
+    background-color: cyan;
+    color: rgb(49, 52, 61);
+}
+
+.card-title h2 {
+    color: rgb(49, 52, 61);
+}
+#contact-me {
+    width: 100%;
+}
+
+#contact-me #contact-links {
+    width: 70%;
+    display: inline-block;
+    font-size: 26px;
+    margin: 20px;
+}
