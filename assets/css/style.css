@@ -6,17 +6,34 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.grid-container {
+    display: grid;
+  
+    grid-template-areas:
+      "header header header"
+      "underheader underheader underheader"
+      "about about about"
+      "main main main"
+      "footer footer footer";
+  
+    grid-template-columns: 0fr 1fr 1fr;
+    grid-template-rows: 0.25fr 0.5fr auto auto;
+    grid-gap: 10px;
+  
+    height: 95vh;
+    width: 100vw;
+  }
+
 body {
     background-color:white;
 }
 
 header {
+    grid-area: header;
     padding: 20px;
     background-color: rgb(49, 52, 61);
     color: #ffffff;
 }
-
-header #website-name{}
 
 header h1 {
     display: inline-block;
@@ -50,6 +67,7 @@ a {
 }
 
 #underheader {
+    grid-area: underheader;
     height: 200px;
     width: 100%;
     margin-bottom: 25px;
@@ -77,6 +95,10 @@ a {
     color: rgb(49, 52, 61);
 }
 
+#about-me {
+    grid-area: about;
+}
+
 #about-me #about-text {
     width: 70%;
     display: inline-block;
@@ -85,6 +107,10 @@ a {
 }
 
 /* Work Examples */
+main {
+    grid-area: main;
+}
+
 main .section-title {
     height: 60vw;
 }
@@ -141,7 +167,9 @@ main #cards {
 .card-title h2 {
     color: rgb(49, 52, 61);
 }
+
 #contact-me {
+    grid-area: footer;
     width: 85%;
 }
 
