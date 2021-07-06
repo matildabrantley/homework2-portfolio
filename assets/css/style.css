@@ -1,24 +1,26 @@
 /* universal selector */
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+/* *:hover {
+    box-shadow: 0px 0px 5px 3px gray;
+} */
 
 .grid-container {
     display: grid;
   
     grid-template-areas:
-      "header header header"
-      "underheader underheader underheader"
-      "about about about"
-      "main main main"
-      "footer footer footer";
+      "header header"
+      "underheader underheader"
+      "about about"
+      "main main"
+      "footer footer";
   
-    grid-template-columns: 0fr 1fr 1fr;
-    grid-template-rows: 0.25fr 0.5fr auto auto;
-    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr auto auto auto;
   
     height: 95vh;
     width: 100vw;
@@ -28,6 +30,8 @@ body {
     background-color:white;
 }
 
+
+/* Header, Nav Bar */
 header {
     grid-area: header;
     padding: 20px;
@@ -54,11 +58,12 @@ header nav ul {
 header nav li {
     display: inline-block;
     margin-left: 25px;
+    text-align: center;
 }
 
 header nav li::after {
     display: block;
-    content: "_________";
+    content: "___________";
 }
 
 a {
@@ -68,7 +73,7 @@ a {
 
 #underheader {
     grid-area: underheader;
-    height: 200px;
+    height: 170px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/underheader.jpg");
@@ -95,6 +100,9 @@ a {
     color: rgb(49, 52, 61);
 }
 
+
+
+/*Section - About Me*/
 #about-me {
     grid-area: about;
 }
@@ -106,7 +114,10 @@ a {
     margin: 20px;
 }
 
-/* Work Examples */
+
+
+/* Main - Projects/Work Portfolio */
+/* Nested Grid */
 main {
     grid-area: main;
 }
@@ -119,12 +130,13 @@ main #cards {
     width: 70%;
     display: inline-block;
     margin-left: 20px;
+    padding-top: 20px;
 }
 
-#surf-card {
-    border: 5px solid cyan;
+#brew-card {
+    border: 6px solid cyan;
     height: 100%;
-    width: 100%;
+    width: 95%;
     position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
@@ -132,8 +144,9 @@ main #cards {
     transition: 0.5s;
 }
 
-#surf-card:hover {
-    filter: brightness(80%) saturate(150%) hue-rotate(45deg);
+#brew-card:hover {
+    filter: brightness(130%) saturate(150%) hue-rotate(25deg);
+    box-shadow: 0px 0px 5px 3px gray;
 }
 
 .project-images{
@@ -151,15 +164,21 @@ main #cards {
     transition: 0.5s;
 }
 
+.work-card img {
+    height: 160px;
+}
+
 .work-card:hover {
-    filter: brightness(80%) saturate(150%) hue-rotate(45deg);
+    filter: brightness(110%) saturate(150%) hue-rotate(45deg);
+    box-shadow: 0px 0px 5px 3px gray;
 }
 
 .card-title {
     position: absolute;
-    bottom: 30px;
-    height: 70px;
+    bottom: 20px;
+    height: 92px;
     width: 150px;
+    padding-left: 5px;
     background-color: cyan;
     color: rgb(49, 52, 61);
 }
@@ -168,6 +187,8 @@ main #cards {
     color: rgb(49, 52, 61);
 }
 
+
+/* Footer - Contact */
 #contact-me {
     grid-area: footer;
     width: 85%;
@@ -197,7 +218,7 @@ main #cards {
 
 #contact-me nav li::after {
     display: block;
-    content: "___________";
+    content: "______________";
 }
 
 #contact-me a {
@@ -205,8 +226,40 @@ main #cards {
     text-decoration: none;
 }
 
+#contact-me a:hover {
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 3px gray;
+}
+
 @media screen and (max-width: 992px) {
     .work-card {
-      width: 100%;
+        width: 90%;
+    }
+
+    .section-title {
+        width: 100%;
+        float: none;
+        border-right: none;
+        border-bottom: solid 5px rgb(49, 52, 61);
+    }
+
+    #work-title {
+        height: 50px;
+    }
+
+    .section-title h2 {
+       font-size: 4vw; 
+    }
+
+    #contact-title {
+        padding-bottom: 100px;
+    }
+
+    #contact-me nav li {
+        display: block;
+        padding-left: 0px;
+        font-size: 40px;
     }
   }

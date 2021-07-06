@@ -1,6 +1,8 @@
 # Homework 2 - Portfolio Website
 Build a portfolio from scratch
 
+[Live GitHub Portfolio](https://matildabrantley.github.io/portfolio/)
+
 ## Goals for Portfolio Homework
 
 GIVEN I need to sample a potential employee's previous work
@@ -25,6 +27,14 @@ GIVEN I need to sample a potential employee's previous work
 
 ## Reworks
 * Incorporated many elements into reusable classes, such as major-section, section-title, card-title
+* Switched to CSS Grid to quickly rearrange major elements when needed
 
+## Screenshots
+
+Larger Device Layout:
 
 ![Portfolio Screenshot](assets/images/portfolio-screenshot.jpg)
+
+Mobile Device Layout:
+
+![Portfolio Screenshot](assets/images/mobile-screenshot.jpg)
