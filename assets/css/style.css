@@ -2,7 +2,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* *:hover {
@@ -31,92 +30,90 @@
     height: 100vh;
     } */
 
-#background1 {
+.backgrounds {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: url("/assets/images/floral-dream1.jpg")  no-repeat center center fixed; 
+    opacity: 0.5;
+    z-index:-1;
+    background-size: cover;
+}
+
+#background0 {
+    background: rgb(0,0,0)  no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    opacity: 0.5;
-    z-index:-1;
+}
+
+#background1 {
+    background: url("css-backgrounds/floral-dream1.jpg")  no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 #background2 {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: url("/assets/images/floral-dream2.jpg")  no-repeat center center fixed; 
+    background: url("css-backgrounds/floral-dream2.jpg")  no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    opacity: 0.5;
-    z-index:-1;
 }
 #background3 {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: url("/assets/images/floral-dream3.jpg")  no-repeat center center fixed; 
+    background: url("css-backgrounds/floral-dream3.jpg")  no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    opacity: 0.5;
-    z-index:-1;
 }
 
 #background4 {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: url("/assets/images/floral-dream4.jpg")  no-repeat center center fixed; 
+    background: url("css-backgrounds/floral-dream4.jpg")  no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    opacity: 0.5;
-    z-index:-1;
 }
-/* 
+
 #background5 {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: url("/assets/images/floral-dream5.jpg")  no-repeat center center fixed; 
+    background: url("css-backgrounds/floral-dream5.jpg")  no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    opacity: 0;
-    z-index:-1;
 }
 
 #background6 {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: url("/assets/images/floral-dream6.jpg")  no-repeat center center fixed; 
+    background: url("css-backgrounds/floral-dream6.jpg")  no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    opacity: 0;
-    z-index:-1;
-} */
+}
+
 /* Header, Nav Bar */
 header {
+    font-family: 'Cormorant', serif;
     grid-area: header;
     padding: 20px;
-    background-color: rgb(49, 52, 61);
-    color: #ffffff;
+    background: rgba(230,230,230,.80);
+    color: black;
+    box-shadow: 0px 0px 5px black;
+    transition: box-shadow 0.7s, background 0.7s ;
+}
+
+header:hover {
+    box-shadow: 0px 0px 20px black;
+    background: rgba(230,230,230,.90);
 }
 
 header h1 {
+    font-family: 'Cormorant', serif;
     display: inline-block;
     font-size: 48px;
+}
+
+header h1 span {
+    transition: color 0.3s;
+}
+
+header h1 span:hover {
+    color: pink;
 }
 
 header nav {
@@ -142,28 +139,36 @@ header nav li::after {
 }
 
 a {
-    color: #ffffff;
+    color: black;
     text-decoration: none;
 }
 
 #underheader {
     grid-area: underheader;
-    height: 170px;
+    height: 100px;
     width: 100%;
     margin-bottom: 25px;
     /* background-image: url("../images/underheader.jpg"); */
     background-size: cover;
     background-position: center;
-}
+} 
 
 .major-section {
-    background-color: rgba(200,200,200,.50);
+    font-family: 'Cormorant', serif;
+    background: rgba(230,230,230,.80);
     display: inline-block;
     margin-right: 5%;
     margin-left: 10%;
     margin-bottom: 50px;
     padding: 20px;
     border-radius: 20px;
+    box-shadow: 0px 0px 5px black;
+    transition: box-shadow 0.7s, background 0.7s ;
+}
+
+.major-section:hover {
+    box-shadow: 0px 0px 20px black;
+    background: rgba(230,230,230,.90);
 }
 
 .section-title {
@@ -191,7 +196,6 @@ a {
     font-size: 26px;
     margin: 20px;
 }
-
 
 
 /* Main - Projects/Work Portfolio */

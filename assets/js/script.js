@@ -7,19 +7,19 @@ const changeOpacity = (e) => {
     const midY = h/2;
 
     //Retrieve distances
-    const reduction = 0.2;
+    const reduction = 0.3;
     const distMouseFromTopLeft = distance(x, y, 0, 0);
     const distMouseFromTopRight = distance(x, y, w, 0);
     const distMouseFromBotLeft = distance(x, y, 0, h);
     const distMouseFromBotRight = distance(x, y, w, h);
     const distFromTopMid = distance(x, y, midX, 0);
     const distFromBotMid = distance(x, y, midX, h);
-    document.getElementById("background1").style.opacity = (w / 4) / (distMouseFromTopLeft+1) - reduction; 
-    document.getElementById("background2").style.opacity = (w / 4) / (distMouseFromTopRight+1) - reduction; 
-    document.getElementById("background3").style.opacity =  (w / 4) / (distMouseFromBotLeft+1) - reduction; 
-    document.getElementById("background4").style.opacity =  (w / 4) / (distMouseFromBotRight+1) - reduction; 
-    //document.getElementById("background5").style.opacity =  (w / 10) / (distFromBotMid+1) - reduction - 0.1; 
-    //document.getElementById("background6").style.opacity =  (w / 10) / (distFromTopMid+1) - reduction - 0.1; 
+    document.getElementById("background1").style.opacity = (h / 3) / (distMouseFromTopLeft+1) - reduction; 
+    document.getElementById("background5").style.opacity = (h / 3) / (distMouseFromTopRight+1) - reduction; 
+    document.getElementById("background3").style.opacity =  (h / 3) / (distMouseFromBotLeft+1) - reduction; 
+    document.getElementById("background6").style.opacity =  (h / 3) / (distMouseFromBotRight+1) - reduction; 
+    document.getElementById("background2").style.opacity =  (h / 3) / (distFromTopMid+1) - reduction - 0.1; 
+    document.getElementById("background4").style.opacity =  (h / 3) / (distFromBotMid+1) - reduction - 0.1; 
 
 }
 

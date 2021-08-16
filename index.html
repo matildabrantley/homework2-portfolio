@@ -3,24 +3,32 @@
 
 <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Matilda Brantley Portfolio</title>
 </head>
 
 <body  onmousemove="changeOpacity(event)"> 
 
-    <div id="backgrounds">
-        <div id="background1"></div>
-        <div id="background2"></div>
-        <div id="background3"></div>
-        <div id="background4"></div>
-        <!-- <div id="background5"></div>
-        <div id="background6"></div> -->
+    <div>
+        <div id="background0" class="backgrounds"></div>
+        <div id="background1" class="backgrounds"></div>
+        <div id="background2" class="backgrounds"></div>
+        <div id="background3" class="backgrounds"></div>
+        <div id="background4" class="backgrounds"></div>
+        <div id="background5" class="backgrounds"></div>
+        <div id="background6" class="backgrounds"></div>
     </div>
 
     <div class="grid-container">
         <header id="header">
-            <h1>Matilda Brantley Portfolio</h1>
+            <h1>
+                <span>M</span><span>a</span><span>t</span><span>i</span><span>l</span><span>d</span><span>a</span> 
+                <span>B</span><span>r</span><span>a</span><span>n</span><span>t</span><span>l</span><span>e</span><span>y</span>
+            </h1>
             <nav>
                 <ul>
                     <li>
@@ -45,14 +53,13 @@
                 <p> 
                     Hi, I'm Matilda Brantley, a fledgling web developer. 
                     I love seeing an idea in my mind come to life. 
-                    Making software is the perfect realization of this for me as it's the most mutable and living design one could implement. 
-                    I also have a passion for the biological sciences, especially adaptation and evolution. 
+                    Making software is the perfect outlet for this as it's one of the most mutable and living designs one could create. 
+                    I also have a passion for the biological sciences, especially adaptation, evolution and intelligent systems. 
                     These inspire my ideals for software that can adjust to ever-changing needs.
                 </p> <br>
                 <p>
-                    I am currently attending Georgia Tech's Full Stack Coding Bootcamp 
-                    and have finished about a third of the program. This is certainly the best learning
-                    experience in the tech industry I've had! I'm looking forward to what's ahead.
+                    I am now attending Georgia Tech's Full Stack Coding Bootcamp with only a few weeks left. My current projects
+                     involve React, MongoDB, PWAs, Phaser and AI.
 
                 </p>
             </div>
@@ -132,6 +139,7 @@
                 </ul>
             </nav>
         </footer>
+        <div id="filler" style="height: 10px;"></div>
     </div>
 </body>
 <script src="assets/js/script.js"></script>
