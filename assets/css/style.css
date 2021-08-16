@@ -67,7 +67,7 @@
     opacity: 0.5;
     z-index:-1;
 }
-}
+
 #background4 {
     position: fixed;
     width: 100vw;
@@ -81,6 +81,18 @@
     z-index:-1;
 }
 
+#background5 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("/assets/images/floral-dream5.jpg")  no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0;
+    z-index:-1;
+}
 
 /* Header, Nav Bar */
 header {

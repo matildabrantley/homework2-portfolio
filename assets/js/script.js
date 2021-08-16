@@ -7,15 +7,18 @@ const changeOpacity = (e) => {
     const midX = w/2;
     const midY = h/2;
 
-    const reduction = 0.0;
+    const reduction = 0.2;
     const distMouseFromTopLeft = distance(x, y, 0, 0);
-    document.getElementById("background1").style.opacity = distMouseFromTopLeft / 
     const distMouseFromTopRight = distance(x, y, w, 0);
-    document.getElementById("background2").style.opacity = distMouseFromTopRight / diag;
     const distMouseFromBotLeft = distance(x, y, 0, h);
-    document.getElementById("background3").style.opacity = distMouseFromBotLeft / diag;
     const distMouseFromBotRight = distance(x, y, w, h);
-    document.getElementById("background4").style.opacity = distMouseFromBotRight / diag;
+    const distFromTopMid = distance(x, y, midX, 0);
+    const distFromBotMid = distance(x, y, 0, midY);
+    document.getElementById("background1").style.opacity = (w / 5) / (distMouseFromTopLeft+1) - reduction; 
+    document.getElementById("background2").style.opacity = (w / 5) / (distMouseFromTopRight+1) - reduction; 
+    document.getElementById("background3").style.opacity =  (w / 5) / (distMouseFromBotLeft+1) - reduction; 
+    document.getElementById("background4").style.opacity =  (w / 5) / (distMouseFromBotRight+1) - reduction; 
+    //document.getElementById("background4").style.opacity =  50 / (distMouseFromBotMid+1) - reduction - 0.1; 
     //w / (y + w) - x / h - reduction;
     // document.getElementById("background2").style.opacity = w / (y + w);
     // document.getElementById("background1").style.opacity = 0.5 + (x / w)/2;
