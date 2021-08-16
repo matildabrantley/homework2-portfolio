@@ -80,7 +80,7 @@
     opacity: 0.5;
     z-index:-1;
 }
-
+/* 
 #background5 {
     position: fixed;
     width: 100vw;
@@ -94,6 +94,18 @@
     z-index:-1;
 }
 
+#background6 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("/assets/images/floral-dream6.jpg")  no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0;
+    z-index:-1;
+} */
 /* Header, Nav Bar */
 header {
     grid-area: header;
@@ -145,10 +157,13 @@ a {
 }
 
 .major-section {
+    background-color: rgba(200,200,200,.50);
     display: inline-block;
     margin-right: 5%;
     margin-left: 10%;
     margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .section-title {
