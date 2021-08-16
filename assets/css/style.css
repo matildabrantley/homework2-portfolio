@@ -35,7 +35,7 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background: url("/assets/images/floral-dream.jpg")  no-repeat center center fixed; 
+    background: url("/assets/images/floral-dream1.jpg")  no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -48,6 +48,31 @@
     width: 100vw;
     height: 100vh;
     background: url("/assets/images/floral-dream2.jpg")  no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.5;
+    z-index:-1;
+}
+#background3 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("/assets/images/floral-dream3.jpg")  no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.5;
+    z-index:-1;
+}
+}
+#background4 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("/assets/images/floral-dream4.jpg")  no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
