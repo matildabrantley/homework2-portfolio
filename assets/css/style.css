@@ -26,8 +26,34 @@
     width: 100vw;
   }
 
-body {
-    background-color:white;
+    /* backgrounds {
+    width: 100vw;
+    height: 100vh;
+    } */
+
+#background1 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("/assets/images/floral-dream.jpg")  no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.5;
+    z-index:-1;
+}
+#background2 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("/assets/images/floral-dream2.jpg")  no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.5;
+    z-index:-1;
 }
 
 
@@ -76,7 +102,7 @@ a {
     height: 170px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/underheader.jpg");
+    /* background-image: url("../images/underheader.jpg"); */
     background-size: cover;
     background-position: center;
 }
