@@ -40,7 +40,7 @@
 }
 
 #background0 {
-    background: rgb(0,0,0)  no-repeat center center fixed; 
+    background: rgb(50,50,50)  no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -131,11 +131,13 @@ header nav li {
     display: inline-block;
     margin-left: 25px;
     text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: box-shadow 0.5s;
 }
 
-header nav li::after {
-    display: block;
-    content: "___________";
+header nav li:hover {
+    box-shadow: 0px 0px 5px 3px gray;
 }
 
 a {
@@ -215,7 +217,7 @@ main #cards {
     padding-top: 20px;
 }
 
-#brew-card {
+#leasegit-card {
     border: 6px solid cyan;
     height: 100%;
     width: 95%;
@@ -226,7 +228,7 @@ main #cards {
     transition: 0.5s;
 }
 
-#brew-card:hover {
+#leasegit-card:hover {
     filter: brightness(130%) saturate(150%) hue-rotate(25deg);
     box-shadow: 0px 0px 5px 3px gray;
 }
@@ -306,11 +308,13 @@ main #cards {
 #contact-me a {
     color: rgb(49, 52, 61);
     text-decoration: none;
+    padding: 10px;
+    transition: font-size 0.5s, box-shadow 0.5s;
 }
 
 #contact-me a:hover {
     color: black;
-    padding: 20px;
+    font-size: 35px;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 3px gray;
 }
