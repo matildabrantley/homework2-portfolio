@@ -1,3 +1,5 @@
+//TODO: Add touch move event
+
 const changeOpacity = (e) => {
     const x = e.clientX;
     const y = e.clientY;
